@@ -35,3 +35,8 @@ inoremap <expr> ) getline('.')[col('.') - 1] == ')' ? '<Right>' : ')'
 inoremap <expr> ] getline('.')[col('.') - 1] == ']' ? '<Right>' : ']'
 inoremap <expr> " getline('.')[col('.') - 1] == '"' ? '<Right>' : '"'
 inoremap <expr> ' getline('.')[col('.') - 1] == "'" ? '<Right>' : "'"
+
+nnoremap <leader>ss :mksession! Session.vim<CR>
+nnoremap <leader>ls :source Session.vim<CR>
+
+nnoremap <leader>qq :mksession! Session.vim \| wqa<CR>

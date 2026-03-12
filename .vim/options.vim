@@ -29,4 +29,6 @@ set noshowmode
 
 set termguicolors
 
+set sessionoptions=blank,buffers,curdir,folds,help,tabpages,winsize,terminal
+
 colorscheme catppuccin_mocha
