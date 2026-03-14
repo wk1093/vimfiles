@@ -34,10 +34,10 @@ function! CreateArm64Function()
                 \ l:indent . '.global ' . l:func_name,
                 \ l:indent . '.type ' . l:func_name . ', %function',
                 \ l:func_name . ':',
-                \ l:indent . 'stp x29, x30, [sp, -16]!',
+                \ l:indent . 'stp x29, x30, [sp, #-16]!',
                 \ l:indent . 'mov x29, sp',
                 \ l:indent,
-                \ l:indent . 'ldp x29, x30, [sp], 16',
+                \ l:indent . 'ldp x29, x30, [sp], #16',
                 \ l:indent . 'ret',
                 \ l:indent . '.size ' . l:func_name . ', . - ' . l:func_name
                 \ ]

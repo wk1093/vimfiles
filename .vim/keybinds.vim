@@ -39,4 +39,7 @@ inoremap <expr> ' getline('.')[col('.') - 1] == "'" ? '<Right>' : "'"
 nnoremap <leader>ss :mksession! Session.vim<CR>
 nnoremap <leader>ls :source Session.vim<CR>
 
-nnoremap <leader>qq :mksession! Session.vim \| wqa<CR>
+nnoremap <leader>qs :mksession! Session.vim \| wqa<CR>
+nnoremap <leader>qq :wqa<CR>
+
+nnoremap <Tab> :bn<CR>
