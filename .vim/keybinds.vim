@@ -43,3 +43,6 @@ nnoremap <leader>qs :mksession! Session.vim \| wqa<CR>
 nnoremap <leader>qq :wqa<CR>
 
 nnoremap <Tab> :bn<CR>
+nnoremap <S-Tab> :bp<CR>
+
+tnoremap <Esc> <C-\><C-n>
