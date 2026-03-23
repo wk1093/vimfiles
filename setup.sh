@@ -2,6 +2,8 @@
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+git -C "$SCRIPT_DIR" fetch
+
 LOCAL=$(git -C "$SCRIPT_DIR" rev-parse HEAD)
 REMOTE=$(git -C "$SCRIPT_DIR" rev-parse @{u})
 
