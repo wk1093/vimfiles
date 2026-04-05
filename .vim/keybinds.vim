@@ -26,15 +26,18 @@ nnoremap <leader>g :Termdebug<CR><C-W>l<C-W>H
 nnoremap <leader>j :bp<CR>
 nnoremap <leader>k :bn<CR>
 
-inoremap {{ {<CR>}<Esc>O
-inoremap (( ()<Left>
-inoremap '' ''<Left>
-inoremap [[ []<Left>
+inoremap { {}<Left>
+inoremap ( ()<Left>
+inoremap ' ''<Left>
+inoremap [ []<Left>
+inoremap " ""<Left>
+
+inoremap <expr> <CR> getline('.')[col('.')-2:col('.')-1] == '{}' ? "\<CR>\<Esc><<O" : "\<CR>"
 
 inoremap <expr> ) getline('.')[col('.') - 1] == ')' ? '<Right>' : ')'
 inoremap <expr> ] getline('.')[col('.') - 1] == ']' ? '<Right>' : ']'
-inoremap <expr> " getline('.')[col('.') - 1] == '"' ? '<Right>' : '"'
-inoremap <expr> ' getline('.')[col('.') - 1] == "'" ? '<Right>' : "'"
+inoremap <expr> " getline('.')[col('.') - 1] == '"' ? '<Right>' : "\"\"\<Left>"
+inoremap <expr> ' getline('.')[col('.') - 1] == "'" ? '<Right>' : "''\<Left>"
 
 nnoremap <leader>ss :mksession! Session.vim<CR>
 nnoremap <leader>ls :source Session.vim<CR>
