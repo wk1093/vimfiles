@@ -33,4 +33,10 @@ set rnu
 
 set sessionoptions=blank,buffers,curdir,folds,help,tabpages,winsize,terminal
 
-colorscheme catppuccin_mocha
+colorscheme solarized8
+set background=dark
+" Fix buftabline colors to match Solarized Dark
+highlight BufTabLineCurrent guibg=#073642 guifg=#2aa198 gui=bold  " Active buffer (Teal bg, Cyan text)
+highlight BufTabLineActive  guibg=#002b36 guifg=#93a1a1           " Open but not focused
+highlight BufTabLineHidden  guibg=#002b36 guifg=#586e75           " Background buffers
+highlight BufTabLineFill    guibg=#001e26                         " Empty space in the bar

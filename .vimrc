@@ -4,7 +4,7 @@ packadd termdebug
 let g:termdebug_config = {'wide': 1}
 
 let g:lightline = {
-	\ 'colorscheme': 'catppuccin_mocha',
+	\ 'colorscheme': 'solarized',
 	\ }
 
 let mapleader = " "
