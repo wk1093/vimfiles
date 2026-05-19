@@ -37,9 +37,11 @@ nnoremap <S-Tab> :bp<CR>
 
 tnoremap <Esc> <C-\><C-n>
 inoremap ;; <Esc>A;<CR>
+inoremap {{ <Esc>A {<CR>
 
 nnoremap <leader>d :Fern . -drawer -reveal=%<CR>
 
 nnoremap gd :ALEGoToDefinition<CR>
 nnoremap gr :ALEFindReferences<CR>
 nnoremap K :ALEHover<CR>
+nnoremap <Leader>bd :bprevious<bar>bdelete #<CR>
