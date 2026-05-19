@@ -48,3 +48,5 @@ sync_plugin "https://github.com/lambdalisue/vim-nerdfont" "$PACK_DIR/nerdfont.vi
 sync_plugin "https://github.com/lambdalisue/vim-fern-renderer-nerdfont" "$PACK_DIR/fern-renderer-nerdfont.vim"
 sync_plugin "https://github.com/preservim/nerdcommenter.git" "$VENDOR_DIR/nerdcommenter"
 sync_plugin "https://github.com/ap/vim-buftabline.git" "$PACK_DIR/vim-buftabline"
+sync_plugin "https://github.com/tpope/vim-surround.git" "$PACK_DIR/vim-surround"
+sync_plugin "https://github.com/tmsvg/pear-tree.git" "$PACK_DIR/pear-tree"
