@@ -51,4 +51,4 @@ nnoremap <S-Tab> :bp<CR>
 tnoremap <Esc> <C-\><C-n>
 inoremap ;; <Esc>A;<CR>
 
-nnoremap <leader>d :Fern . -drawer -reveal=%
+nnoremap <leader>d :Fern . -drawer -reveal=%<CR>
