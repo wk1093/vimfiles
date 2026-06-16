@@ -50,3 +50,4 @@ sync_plugin "https://github.com/preservim/nerdcommenter.git" "$VENDOR_DIR/nerdco
 sync_plugin "https://github.com/ap/vim-buftabline.git" "$PACK_DIR/vim-buftabline"
 sync_plugin "https://github.com/tpope/vim-surround.git" "$PACK_DIR/vim-surround"
 sync_plugin "https://github.com/tmsvg/pear-tree.git" "$PACK_DIR/pear-tree"
+sync_plugin "https://github.com/airblade/vim-gitgutter.git" "$PACK_DIR/vim-gitgutter"
