@@ -43,3 +43,6 @@ highlight BufTabLineFill    guibg=#001e26                         " Empty space 
 
 " Fix terminal buffers showing up, and make :bn skip them
 autocmd TerminalOpen * if bufwinnr('') > 0 | setlocal nobuflisted | endif
+
+" Change whitespace display (:set list and :set nolist
+set listchars=tab:>-,space:·,trail:~
