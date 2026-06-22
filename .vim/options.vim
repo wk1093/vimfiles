@@ -46,3 +46,5 @@ autocmd TerminalOpen * if bufwinnr('') > 0 | setlocal nobuflisted | endif
 
 " Change whitespace display (:set list and :set nolist
 set listchars=tab:>-,space:·,trail:~
+
+set mouse=a
