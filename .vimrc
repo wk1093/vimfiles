@@ -21,6 +21,9 @@ runtime! ftplugin/man.vim
 let g:ale_cpp_clangd_options = '--compile-commands-dir=build'
 let g:ale_completion_enabled = 1
 
+let g:ale_linters = {
+\   'c': ['cc'],
+\   'cpp': ['cc'],
+\}
 
-
-
+autocmd TerminalOpen * if bufwinnr('') > 0 | setlocal nobuflisted | endif
