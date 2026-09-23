@@ -48,3 +48,13 @@ autocmd TerminalOpen * if bufwinnr('') > 0 | setlocal nobuflisted | endif
 set listchars=tab:>-,space:·,trail:~
 
 set mouse=a
+
+let g:vimtex_view_method = 'zathura'
+let g:tex_flavor = 'latex'
+let g:tex_conceal='abdmg'
+set conceallevel=1
+
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
